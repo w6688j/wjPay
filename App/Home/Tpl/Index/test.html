@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>竹燕科技</title>
+    <link rel="stylesheet" href="/css/login_common.css">
+</head>
+<body class="login-main">
+<div class="login-body">
+    <div class="login-body-content">
+        <div class="login-body-left">
+            <span>上海竹燕信息技术有限公司订货系统</span>
+            <p>
+                公司地址：上海市松江区中山中路79号平高大厦1503室<br>
+                联系方式：18918480686 邮箱：kevin@izhuyan.com<br>
+                合作单位：深圳市铱云云计算有限公司
+            </p>
+            <p>
+                备注：本系统为竹燕集团客户订货系统，采用易订货内核，实现品牌官网定制<br>
+                Copyright @如需实现易订货系统PC版有公司独立域名，并且打造品牌独立订货首页<br>
+                请联系骆经理：18918480686
+            </p>
+        </div>
+        <div class="login-body-middle"></div>
+        <div class="login-body-right">
+            <span>欢迎访问</span>
+            <div class="form-field">
+                <label for="username"></label>
+                <input id="username" name="username" type="text" value="" placeholder="账号">
+            </div>
+            <div class="form-field">
+                <label for="password"></label>
+                <input id="password" name="password" type="password" value="" placeholder="密码">
+            </div>
+            <div class="form-field">
+                <input type="checkbox" id="rememberName" class="rember-name"/>
+                <button class="login" id="open">免费开通</button>
+                <button class="login" id="loginBtn">立即登录</button>
+            </div>
+            <input type="hidden" id="loginErrorCount" name="loginErrorCount" value="0"/>
+            <input type="hidden" id="lt" name="lt" value=""/>
+        </div>
+    </div>
+</div>
+</body>
+<script src="http://static.dev.izhuyan.com/style/js/jquery.js"></script>
+<script type="text/javascript" src="https://sso.dinghuo123.com/portal/js/customerLoginBuild.js"></script>
+<script>
+    $(function () {
+        var height = $(window).height() / 2;
+        $('.login-body').css('height', height);
+        $('.login-body').css('margin-top', -height / 2);
+
+        $('#open').click(function () {
+            window.location.href = "https://sso.dinghuo123.com/apply/apply1?rc=00173";
+        });
+    });
+</script>
+</html>

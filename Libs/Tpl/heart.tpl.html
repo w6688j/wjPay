@@ -1,0 +1,28 @@
+<h1>{$title}</h1>
+<h3 class="page-header" style="border-bottom: 1px solid #f0f0f0; padding: 0; margin: 0 0 10px; line-height: 2em;">Memory
+    info</h3>
+<table width='800' border='1' style='border-spacing: 0;'>
+    <?php foreach($memory as $tr){ ?>
+    <tr>
+        <?php foreach($tr as $td){ ?>
+        <td>{$td}</td>
+        <?php } ?>
+    </tr>
+    <?php } ?>
+</table>
+<h3 class="page-header" style="border-bottom: 1px solid #f0f0f0; padding: 0; margin: 0 0 10px; line-height: 2em;">Disk info</h3>
+<table width='800' border='1' style='border-spacing: 0;'>
+    <?php foreach($disk as $tr){ ?>
+    <tr>
+        <?php foreach($tr as $td){ ?>
+        <td>{$td}</td>
+        <?php } ?>
+    </tr>
+    <?php } ?>
+</table>
+<h3 class="page-header" style="border-bottom: 1px solid #f0f0f0; padding: 0; margin: 0 0 10px; line-height: 2em;">Crontab Log</h3>
+<p>
+    <?php foreach($logs as $text){ ?>
+    {$text}<br>
+    <?php } ?>
+</p>
