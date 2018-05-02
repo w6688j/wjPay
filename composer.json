@@ -1,5 +1,16 @@
 {
-    "require-dev": {
-        "phpunit/phpunit": "^6.5"
+  "require-dev": {
+    "phpunit/phpunit": "^6.5"
+  },
+  "autoload": {
+    "classmap": [
+      "Libs/"
+    ],
+    "files": [
+      "Libs/Common/functions.php"
+    ],
+    "psr-4": {
+      "Tests\\": "Tests/"
     }
+  }
 }
